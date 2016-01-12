@@ -1,0 +1,17 @@
+{
+  "name": "Google Gauge",
+  "description": "An application that connects to a local server to get a value.",
+  "version": "0.1",
+  "manifest_version": 2,
+  "app": {
+    "background": {
+      "scripts": ["background.js"]
+    }
+  },
+  "sockets": {
+    "tcp": {
+      "connect": "*:8088"
+    }
+  }
+}
+
